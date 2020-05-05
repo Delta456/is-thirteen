@@ -37,4 +37,4 @@ fn main() {
 
 ## License
 
-Released under [MIT](LICENSE.md).
+Released under [MIT](LICENSE).
