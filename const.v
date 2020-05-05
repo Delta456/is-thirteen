@@ -1,3 +1,5 @@
+module is-thirteen
+
 const (
     thirteen_strs = [
 	"xiii",   // Roman numeral 13
