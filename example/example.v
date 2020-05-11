@@ -1,21 +1,3 @@
-# is thirteen
-
-Check if a number is equal to 13. Inspired from this [Go Module](https://github.com/stanleynguyen/is-thirteen).
-
-## Installation
-
-- Manually:
-  - `git clone https://github.com/Delta456/is-thirteen is_thirteen`
-
-- Via VPM
-   - `v install is_thirteen`
-
-- Via Vpkg
-   - `vpkg install is_thirteen`
-
-## Usage
-
-```v
 import is_thirteen
 
 fn main() {
@@ -36,8 +18,3 @@ fn main() {
 	is_thirteen.str("neetriht").backwards.thirteen()  // true
 	is_thirteen.str("aLumInUm").atomic_number.thirteen() // true
 }
-```
-
-## License
-
-Released under [MIT](LICENSE).

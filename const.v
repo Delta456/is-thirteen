@@ -1,4 +1,4 @@
-module is-thirteen
+module is_thirteen
 
 const (
     thirteen_strs = [
