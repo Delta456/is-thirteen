@@ -57,12 +57,8 @@ jobs:
       with:
         path: vlib/is_thirteen
     - name: Build V
-      run: |
-        .\make.bat
+      run: .\make.bat
     # Don't move applying V directory to PATH, to other steps
     # otherwise this step and V script won't see V executable.
     - name: Build example
-      run: |
-        $env:path += ";$(get-location)"
-        cd .\vlib\ui\example\
-        & v run .\example.v
+      run: .\v.exe run .\vlib\is_thirteen\example\example.v
