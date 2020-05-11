@@ -4,6 +4,7 @@ import math
 //import time
 
 struct NumMatcher {
+pub:
 	value       f64
 	roughly     RoughlyMatcher
 	not         InvertedMatcher
@@ -34,6 +35,7 @@ pub fn (m NumMatcher) thirteen() bool {
 }
 
 struct OfWithinMatcher {
+pub:
 	of WithinMatcher
 }
 
@@ -69,8 +71,9 @@ pub fn (m NumMatcher) divides(num f64) NumMatcher {
 
 struct StrMatcher {
 	value        string
-	can_spell     SpellMatcher
+pub:    
 	//anagram_of    AnagramMatcher
+	can_spell     SpellMatcher
 	backwards    BackwardsMatcher
 	atomic_number AtomicMatcher
 }
@@ -192,7 +195,7 @@ struct AnagramMatcher{
 	value string
 }
 
-fn (m AnagramMatcher) is_anagram(str string) bool {
+pub fn (m AnagramMatcher) is_anagram(str string) bool {
     if m.value.len != str.len {
         return false
     }
@@ -210,7 +213,7 @@ fn sort_byte(arr mut []byte) {
 
 
 // thirteen Check if a string is an anagram of Thirteen
-fn (m AngramMatcher) thirteen() bool {
+pub fn (m AngramMatcher) thirteen() bool {
 	return anagram.AreAnagram(strings.ToLower(m.value), "thirteen")
 }
 */
