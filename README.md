@@ -1,5 +1,7 @@
 # is thirteen
 
+![is-thirteen](img/is-thirteen.jpeg)
+
 Check if a number is equal to 13. Inspired from this [Go Module](https://github.com/stanleynguyen/is-thirteen).
 
 ## Installation
