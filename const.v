@@ -332,6 +332,6 @@ const (
 	"onúsh",                 // Kazakh latin
 	"ishumi nantathu",       // isiZulu
 	"lishumi elinesithathu", // isiXhosa
-     ]
+    ]
     thirteen = 13
 )
